@@ -73,7 +73,7 @@ class question_components_modified:
     def postProcessComponent(self, components):
         if components['type'] == "R":
             return {'type': "E", 'attributes': [], 'conditions': [], 'table': [components['relation']]}
-        if components['type'] == "A":
+        if components['type'] == "A" or components['type'] == "V":
             if 'sub_type' in components and components['sub_type'] == "Ax":
                 attributes = components['attributes']
                 tables = []
