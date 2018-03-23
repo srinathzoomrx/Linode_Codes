@@ -6,6 +6,8 @@ SQL query according to the Natural Language query.
 The details of output and input parameters are given in the class model_opt
 '''
 import networkx as nx
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from itertools import chain
 from networkx.utils import pairwise
