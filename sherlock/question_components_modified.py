@@ -25,7 +25,6 @@ class question_components_modified:
         """
         From the question retrieve necessary components as expression
         Argument - str - question
-
         return expression
         """
         components = []
@@ -90,7 +89,6 @@ class question_components_modified:
         Merge two operations
         Arguement - operation - op1
                   - operation - op2
-
         Return operation
         """
         if (op1['operation'] not in self.semantic_group_obj.merger_op or op2['operation'] not in self.semantic_group_obj.merger_op[op1['operation']]):
