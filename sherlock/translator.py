@@ -36,8 +36,7 @@ class translator:
     def return_sql_query(self, components):
         logging.info(components)
         query = "SELECT * from clinical_trials"
-        component_string = json.dumps(components)
-        print component_string
+        component_string = json.dumps(components[0])
         # try:
         '''
         if components['type'] == "C":
@@ -47,7 +46,7 @@ class translator:
             query = complex_queries
         else:
         '''
-        query = self.sql_writer_obj.formQuery(components)
+        query = self.sql_writer_obj.formQuery(component_string)
         logging.info("Query: " + query)
         if not query:
             pass
