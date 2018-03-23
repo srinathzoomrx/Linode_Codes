@@ -51,7 +51,7 @@ class translator:
         if not query:
             pass
         # response = self.database.execute(query)
-        queries = {"query": query, "response": "response", "components": component_string}
+        queries = {"query": query, "response": "response", "components": component_string[0]}
         # except Exception as e:
         #     print e.message
         #     queries = {"query": query, "error": e.message, "components": component_string}
@@ -126,3 +126,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
